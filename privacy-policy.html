@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - el daftar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #222;
+    }
+    .lang-toggle {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+    button {
+      background: #2894FD;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #1a6fc2;
+    }
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      display: none; /* hidden by default */
+      font-family: 'Tahoma', sans-serif;
+    }
+    .english {
+      display: block; /* default */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-toggle">
+      <button id="toggleLang">عربي</button>
+    </div>
+
+    <!-- English Version -->
+    <div class="english" id="en">
+      <h1>Privacy Policy for el daftar</h1>
+      <p><strong>Last updated:</strong> October 4, 2025</p>
+
+      <p>This Privacy Policy describes our policies and procedures on the collection, use and disclosure of your information when you use our Service and tells you about your privacy rights and how the law protects you.</p>
+
+      <p>We use your Personal Data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+      <h2>Interpretation and Definitions</h2>
+      <p><strong>Application</strong> refers to the mobile application <em>el daftar</em>.</p>
+      <p><strong>Company</strong> (referred to as "the Company", "We", "Us" or "Our") refers to el daftar.</p>
+      <p><strong>Website</strong> refers to <a href="https://eldaftar.com">https://eldaftar.com</a></p>
+      <p><strong>Email</strong>: osama.eljooker@gmail.com</p>
+
+      <h2>Collecting and Using Your Personal Data</h2>
+      <p>We may collect personal information such as your email, name, and usage data. This data may be used to provide and improve our services, manage accounts, send updates, and comply with legal requirements.</p>
+
+      <h2>Children’s Privacy</h2>
+      <p>Our Service does not address anyone under the age of 13, and we do not knowingly collect data from children.</p>
+
+      <h2>Changes</h2>
+      <p>We may update this Privacy Policy from time to time. Updates will be posted on this page.</p>
+    </div>
+
+    <!-- Arabic Version -->
+    <div class="arabic" id="ar">
+      <h1>سياسة الخصوصية - الدفتر</h1>
+      <p><strong>آخر تحديث:</strong> 4 أكتوبر 2025</p>
+
+      <p>توضح سياسة الخصوصية هذه سياساتنا وإجراءاتنا الخاصة بجمع واستخدام والإفصاح عن معلوماتك عند استخدامك لخدمتنا، وتوضح حقوقك المتعلقة بالخصوصية وكيف يحميك القانون.</p>
+
+      <p>نستخدم بياناتك الشخصية لتقديم وتحسين الخدمة. باستخدامك للخدمة، فإنك توافق على جمع واستخدام المعلومات وفقًا لسياسة الخصوصية هذه.</p>
+
+      <h2>التعريفات</h2>
+      <p><strong>التطبيق</strong> يشير إلى تطبيق الموبايل <em>الدفتر</em>.</p>
+      <p><strong>الشركة</strong> (المشار إليها بـ "الشركة" أو "نحن") تشير إلى تطبيق الدفتر.</p>
+      <p><strong>الموقع الإلكتروني</strong> هو <a href="https://eldaftar.com">https://eldaftar.com</a></p>
+      <p><strong>البريد الإلكتروني</strong>: osama.eljooker@gmail.com</p>
+
+      <h2>جمع واستخدام بياناتك الشخصية</h2>
+      <p>قد نقوم بجمع معلومات شخصية مثل البريد الإلكتروني والاسم وبيانات الاستخدام. تُستخدم هذه البيانات لتقديم وتحسين الخدمة، إدارة الحسابات، إرسال التحديثات، والامتثال للمتطلبات القانونية.</p>
+
+      <h2>خصوصية الأطفال</h2>
+      <p>خدمتنا لا تستهدف من هم دون 13 عامًا، ولا نقوم بجمع بيانات من الأطفال عن قصد.</p>
+
+      <h2>التغييرات</h2>
+      <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر التحديثات في هذه الصفحة.</p>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById("toggleLang");
+    const en = document.getElementById("en");
+    const ar = document.getElementById("ar");
+
+    btn.addEventListener("click", () => {
+      if (en.style.display === "block") {
+        en.style.display = "none";
+        ar.style.display = "block";
+        btn.textContent = "English";
+      } else {
+        en.style.display = "block";
+        ar.style.display = "none";
+        btn.textContent = "عربي";
+      }
+    });
+  </script>
+</body>
+</html>
